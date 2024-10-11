@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
 </head>
 <body>
     <header class="hero">
@@ -41,7 +42,7 @@
     </header>
 
     <section class="event">
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Front-End</h2>
                 <p class="event__details__description">
@@ -52,6 +53,43 @@
         </div>
     </section>
 
+    <section class="event event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    UI (User Interface) e UX (User Experience) são áreas focadas na criação de interfaces e experiências eficientes e agradáveis para os usuários. O UI se concentra na parte visual e na disposição dos elementos, definindo como um site ou aplicativo se apresenta ao usuário, incluindo botões, cores e layouts. Já o UX se dedica a entender as necessidades e o comportamento dos usuários, projetando uma experiência intuitiva e fácil de usar, que guia o usuário em suas interações. Juntas, UI e UX garantem que o design seja funcional, atraente e centrado no usuário.
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+
+    <section class="event">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Data Science é o campo que combina estatística, programação e conhecimento de negócios para extrair informações valiosas a partir de dados. Usando técnicas como machine learning, análise de dados e visualização, os cientistas de dados identificam padrões, fazem previsões e geram insights que auxiliam na tomada de decisões estratégicas. É uma área essencial para diversas indústrias, pois permite transformar grandes volumes de dados em soluções práticas e baseadas em evidências, ajudando empresas a serem mais eficientes e competitivas.
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+
+    <section class="event event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-End</h2>
+                <p class="event__details__description">
+                    O programador back-end é responsável pelo desenvolvimento da parte "invisível" de sistemas e aplicações, cuidando da lógica, banco de dados e segurança. Ele cria e mantém a infraestrutura que permite a comunicação entre o front-end e o servidor, processando dados e garantindo o bom funcionamento do sistema. As principais tecnologias usadas incluem linguagens como Python, Java e PHP, além de bancos de dados como MySQL e MongoDB, e frameworks como Django e Node.js.
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Back-End">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
