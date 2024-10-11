@@ -20,7 +20,7 @@ Javascript, HTML, CSS...
 
 ## Link Site Externo
 
-- 
+- https://ebac-talks-rose.vercel.app
 
 ## Licença
 
