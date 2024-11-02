@@ -15,18 +15,23 @@
 
     &__image {
         max-width: 360px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
     }
+
 
     &__details {
 
         &__title{
-            font-size: 18px;
+            font-size: 40px;
             font-weight: bold;
             margin-bottom: 16px;
         }
 
         &__description {
-            line-height: 22px;
+            font-size: 20px;
+            line-height: 24px;
         }
     }
 
