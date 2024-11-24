@@ -3,7 +3,7 @@
 @use 'components/buttons';
 @use 'event';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,11 +17,61 @@
     width: 100%;
     margin: 0 auto;
 
-    @media (max-width: 640px){
+    @media (max-width: 640px) {
         max-width: 80%;
     }
 
-    @media (max-width: 1024px){
+    @media (max-width: 1024px) {
         max-width: 90%;
+    }
+}
+
+.span {
+    display: block; // Garante que o texto seja tratado como um bloco
+    text-align: center; // Centraliza o texto
+    font-size: 0.9rem; // Tamanho da fonte ajustado para rodapés
+    color: #6c757d; // Cor discreta para texto secundário
+    margin-top: 2rem; // Espaçamento superior para separar do conteúdo principal
+
+    a {
+        color: #007bff; // Cor para links no texto
+        text-decoration: none; // Remove sublinhado do link
+        font-weight: bold;
+
+        &:hover {
+            text-decoration: underline; // Adiciona sublinhado ao passar o mouse
+        }
+    }
+}
+
+.contact_rodape {
+    display: flex; // Alinha os itens lado a lado
+    justify-content: center; // Centraliza os itens horizontalmente
+    gap: 2rem; // Espaçamento entre os itens
+    padding: 1rem; // Espaçamento interno
+    border-radius: 8px; // Bordas arredondadas
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Leve sombra para destaque
+
+    >div {
+        text-align: center; // Centraliza o conteúdo dentro de cada bloco
+        max-width: 300px; // Define uma largura máxima para cada bloco
+
+        img {
+            width: 50px; // Ajusta o tamanho do ícone
+            height: 50px;
+            margin-bottom: 1rem; // Espaçamento abaixo do ícone
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #fff; // Cor de destaque para os títulos
+            margin-bottom: 0.5rem; // Espaçamento abaixo do título
+        }
+
+        p {
+            font-size: 1rem;
+            color: #fff; // Cor neutra para o texto
+            margin: 0.2rem 0; // Espaçamento vertical entre os parágrafos
+        }
     }
 }
