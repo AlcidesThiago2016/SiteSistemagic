@@ -117,11 +117,11 @@
         <div class="container"  data-aos="fade-left">
             <div class="event__rodape">
                 <h3 id="contact" class="event__rodape__h3">Fale conosco</h3>
-                <form class="event__rodape__form">
-                    <input type="text" placeholder="Digite seu nome" />
-                    <input type="email" placeholder="Digite seu email" />
-                    <input type="tel" placeholder="Digite seu telefone" />
-                    <textarea placeholder="Digite sua mensagem"></textarea>
+                <form class="event__rodape__form" action="send_email.php" method="POST">
+                    <input type="text" name="name" placeholder="Digite seu nome" required />
+                    <input type="email" name="email" placeholder="Digite seu email" required />
+                    <input type="tel" name="phone" placeholder="Digite seu telefone" />
+                    <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
                 <div>
@@ -164,6 +164,7 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/send_email.php"></script>
 </body>
 
 </html>
